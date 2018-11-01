@@ -5,8 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "build": "webpack --mode development",
-    "watch":"webpack -w --mode development" ,
-    "start": "webpack --mode development && node server/index.js",
+    "watch": "webpack -w --mode development",
+    "start": "webpack --mode production && node server/index.js",
     "lint": "eslint .",
     "test": "npm run build && mocha test/.setup.js test/*.spec.js --exit"
   },
@@ -22,6 +22,7 @@
     "chai": "^3.5.0",
     "expect": "^1.20.2",
     "express": "^4.15.3",
+    "growl": "^1.10.5",
     "json-loader": "^0.5.4",
     "lodash": "^4.17.10",
     "lodash-webpack-plugin": "^0.10.2",
@@ -32,6 +33,7 @@
     "react-bootstrap": "^0.32.1",
     "react-dom": "^15.6.2",
     "serve-favicon": "^2.0.1",
+    "superagent": "^3.7.0",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3"
   },
